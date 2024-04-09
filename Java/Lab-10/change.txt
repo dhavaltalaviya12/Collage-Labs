@@ -1,0 +1,2 @@
+word1 is word1. 
+word1 is only word1.
