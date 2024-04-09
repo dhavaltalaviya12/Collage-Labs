@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>web page</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			height: 100vh;
+		}
+		.main{
+			height: 100%;
+			width: 100%;
+			padding: 1%;
+			border: 1px solid black;
+		}
+		.header{
+			width: 100%;
+			height: 20%;
+			/*border: 1px solid black;*/
+		}
+		.content{
+			width: 100%;
+			height: 70%;
+			border: 1px solid blue;
+			padding: 1%;
+		}
+		.footer{
+			width: 100%;
+			height: 10%;
+			/*border: 1px solid red;*/
+		}
+		.img{
+			height: 100%;
+			width: 25%;
+			/*border: 1px solid red;*/
+			float: left;
+		}
+		.navigators{
+			height: 100%;
+			width: 75%;
+			/*border: 1px solid blue;*/
+			float: right;
+		}
+		.navigate{
+			height: 100%;
+			width: 10%;
+			float: right;
+			margin-top: 5%;
+			font-size: 30px;
+			margin-right: 5%;
+		}
+		a{
+			text-decoration: none;
+		}
+		.footername{
+			background-color: blue;
+			color: white;
+			text-align: center;
+			height: 100%;
+			width: 100%;
+			font-size: 30px;
+		}
+		.sidebar{
+			height: 100%;
+			width: 25%;
+			float: left;
+			/*border: 1px solid blue;*/
+			background-color: red;
+		}
+		.rightside{
+			height: 100%;
+			width: 75%;
+			float: left;
+			border: 1px solid blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<div class="img">
+				<img height="100%" width="100%" src="https://darshan.ac.in/Content/media/DU_Logo.svg">
+			</div>
+			<div class="navigators">
+				<div class="navigate"><a href="">Login</a> </div>
+				<div class="navigate"><a href="">Contant</a> </div>
+				<div class="navigate"><a href="">About</a> </div>
+				<div class="navigate"><a href=""> Home</a> </div>
+			</div>
+		</div>
+		<hr>
+		<div class="content">
+			<div class="sidebar">
+				<div class="sidebarText">Sidebar</div>
+				<div class="sidebarText">Home</div>
+				<div></div>
+				<div class="sidebarText">Placement</div>
+				<div></div>
+				<div class="sidebarText">Recruitment</div>
+				<div></div>
+				<div class="sidebarText">Faculty</div>
+				<div></div>
+				<div class="sidebarText">News</div>
+				<div></div>
+			</div>
+			<div class="rightside"></div>
+		</div>
+		<div class="footer">
+			<div class="footername">@Darshan University - Rajkot</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>media query</title>
+	<style type="text/css">
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			height: 100vh;
+			border: 1px solid black;
+		}
+		.main{
+			height: 100%;
+			width: 100%;
+			padding: 3%;
+			border: 1px solid black;
+			font-size: 30px;
+			background-color: cyan;
+
+		}
+		.header{
+			height: 10%;
+			width: 100%;
+			border: 1px solid red;
+			background-color: purple;
+		}
+		.middle{
+			height: 80%;
+			width: 100%;
+			border: 1px solid blue;
+			padding: 3%;
+			background-color: orange;
+		}
+		.footer{
+			height: 10%;
+			width: 100%;
+			border: 1px solid yellow;
+			background-color: blue;
+		}
+		.entry{
+			height: 50%;
+			width: 70%;
+			float: left;
+			
+		}
+		.sidebar{
+			height: 50%;
+			width: 25%;
+			background-color: black;
+			float: right;
+			color: white;
+			font-size: 30px;
+		}
+		.text{
+			height: 15%;
+			width: 100%;
+			color: white;
+			margin-top: 3%;
+			background-color: black;
+			font-size: 30px;
+		}
+		.headerText{
+			font-size: 30px;
+			color: white;
+			margin-top : 20px;
+		}
+		.footerText{
+			color: white;
+			font-size: 30px;
+			margin-top : 20px;
+		}
+
+		@media screen and (max-width: 600px) {
+		  .entry{
+				width: 100%;
+			}
+			.sidebar{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		Page
+		<div class="header">
+			<div class="headerText">Header</div>
+			</div>
+		<div class="middle">
+			<div class="Content">Content</div>
+			<div class="entry">
+				<div class="text">Entry</div>
+				<div class="text">Entry</div>
+				<div class="text">Entry</div>
+			</div>
+			<div class="sidebar">Sidebar</div>
+		</div>
+		<div class="footer">
+			<div class="footerText">@Darshan University</div>
+		</div>
+	</div>
+</body>
+</html>
