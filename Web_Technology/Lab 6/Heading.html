@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #btnTime {
+        height: 30px;
+        width: 100px;
+    }
+
+    #Blue {
+        height: 30px;
+        width: 100px;
+    }
+    #printDate{
+        font-size: 20px;
+        color: rgb(255, 0, 200);
+    }
+</style>
+
+<body>
+    <div>
+        <h1 id="name" onmouseover="name()" onmouseout="name1()">Dhaval Talaviya</h1>
+    </div>
+    <div style="margin: 20px;">
+        <button id="btnTime" onclick="btnTime()">Date & Time</button>
+    </div>
+    <div id="printDate">
+    </div>
+    <div style="margin: 20px;">
+        <button id="Blue" onclick="colorChange('Blue')">Blue</button>
+        <button id="Blue" onclick="colorChange('Bisque')">Bisque</button>
+    </div>
+
+    <script>
+        function name() {
+            name = document.getElementById('name')
+            name.style.color = 'yellow'
+        }
+        function name1() {
+            name = document.getElementById('name')
+            name.style.color = 'red'
+        }
+        function btnTime() {
+            btnTime = document.getElementById('btnTime')
+            currenttime = new Date()
+            t = document.getElementById('printDate')
+            t.innerHTML = currenttime
+        }
+        function colorChange(co) {
+            if (co == "Blue") {
+                document.body.bgColor = "Blue"
+            }
+            else {
+                document.body.bgColor = "Bisque"
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="name">
+        Hello, I am Dhaval Talaviya
+    </div>
+
+    <script>
+        function result(temp){
+             document.getElementById('name').innerHTML = temp
+        }
+
+        function myCalculator(n1, n2, myCallback){
+            let mul = n1 * n2;
+            myCallback(mul);
+        }
+        
+        myCalculator(2, 3, result)
+    </script>
+
+</body>
+</html>

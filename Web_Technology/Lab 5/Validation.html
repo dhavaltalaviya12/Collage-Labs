@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><label>Name : </label></td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td><label>Password : </label></td>
+            <td><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td><label>Conform Password : </label></td>
+            <td><input type="password" id="conformPassword"></td>
+        </tr>
+        <tr>
+            <td><label>Age : </label></td>
+            <td><input type="number" id="age"></td>
+        </tr>
+        <tr>
+            <td><label>Enrollment No. : </label></td>
+            <td><input type="number" id="enroll"></td>
+        </tr>
+        <tr>
+            <td><label>Email : </label></td>
+            <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Submit" id="check" onclick="check()"></td>
+        </tr>
+    </table>
+
+    <script>
+        function check() {
+            n = document.getElementById('name').value
+            var n_pattern = "[a-zA-Z]{8,}"
+            var reg1 = new RegExp(n_pattern)
+            if (reg1.test(n)) {
+                alert("Valid Name")
+            }
+            else {
+                alert("Invalid Name")
+            }
+
+            p = document.getElementById('password').value
+            var p_pattern = "[\\W]{1,}[a-zA-Z]{8,12}"
+            var reg2 = new RegExp(p_pattern)
+            if (reg2.test(p)) {
+                alert("Valid Password")
+            }
+            else {
+                alert("Invalid Password")
+            }
+
+            cp = document.getElementById('conformPassword').value
+            var cp_pattern = "[\\W]{1,}[a-zA-Z]{8,12}"
+            var reg3 = new RegExp(cp_pattern)
+            if (reg3.test(cp) && (cp == c)) {
+                alert("Valid Conform Password")
+            }
+            else {
+                alert("Invalid Conform Password")
+            }
+
+            var d =new Date()
+            a = document.getElementById('age').value
+            var a_pattern = "[0-9]{1,2}"
+            var reg4 = new RegExp(a_pattern)
+            if (reg4.test(a)) {
+                alert("Valid Age")
+            }
+            else {
+                alert("Invalid Age")
+            }
+
+            en = document.getElementById('enroll').value
+            var en_pattern = "[0-9]{11}"
+            var reg5 = new RegExp(en_pattern)
+            if (reg5.test(en)) {
+                alert("Valid Enrollment No.")
+            }
+            else {
+                alert("InvalidEnrollment No.")
+            }
+
+            e = document.getElementById('email').value
+            var e_pattern = "[a-z0-9]*@gmail.com"
+            var reg6 = new RegExp(e_pattern)
+            if (reg6.test(e)) {
+                alert("Valid Email")
+            }
+            else {
+                alert("Invalid Email")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

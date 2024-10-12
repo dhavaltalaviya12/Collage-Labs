@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Name" id="name">
+    <input type="text" placeholder="RollNo" id="rollNo">
+    <input type="button" value="Add" onclick="Add()" id="btn">
+    <div id="result"></div>
+
+
+    <script>
+        e = 0;
+        index = -1;
+        a = [
+            {
+                name: "dhaval",
+                rollNo: 101
+            },
+            {
+                name: "jevin",
+                rollNo: 102
+            },
+            {
+                name: "pratyush",
+                rollNo: 103
+            },
+            {
+                name: "raj",
+                rollNo: 104
+            }
+        ]
+
+        function display() {
+            let dis = document.getElementById('result')
+            let tb = '<table style="margin-top : 10px" border="1">'
+            for (i = 0; i < a.length; i++) {
+                tb += '<tr>'
+                tb += '<td>' + a[i].name + '</td>'
+                tb += '<td>' + a[i].rollNo + '</td>'
+                tb += '<td><input type="button" onclick="Edit(' + i + ')" value="Edit"></td>'
+                tb += '<td><input type="button" onclick="Delete(' + i + ')" value="Delete"></td>'
+                tb += '</tr>'
+            }
+            tb += '</table>'
+            dis.innerHTML = tb
+        }
+        display()
+
+        function Add() {
+            if (document.getElementById('name').value == "" && document.getElementById('rollNo').value == "") {
+                Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "Enter some value",
+
+                });
+
+            }
+            else {
+                if (e == 0) {
+                    obj = {
+                        name: document.getElementById('name').value,
+                        rollNo: document.getElementById('rollNo').value
+                    }
+                    a.push(obj)
+                    display()
+                    document.getElementById('name').value = ""
+                    document.getElementById('rollNo').value = ""
+                }
+                else {
+                    a[index].name = document.getElementById('name').value
+                    a[index].rollNo = document.getElementById('rollNo').value
+                    e = 0
+                    display()
+                    document.getElementById('name').value = ""
+                    document.getElementById('rollNo').value = ""
+                    document.getElementById('btn').value = "Add"
+                }
+            }
+        }
+
+        function Delete(i) {
+            a.splice(i, 1)
+            display()
+        }
+
+        function Edit(i) {
+            index = i
+            document.getElementById('name').value = a[i].name
+            document.getElementById('rollNo').value = a[i].rollNo
+            document.getElementById('btn').value = "Edit"
+            e = 1
+        }
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

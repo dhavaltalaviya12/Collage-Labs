@@ -28,19 +28,19 @@ public class NumberDemo {
     
     class NegativeNumber extends Exception {
         NegativeNumber() {
-            super("plese enter positive number");
+            super("please enter positive number");
         }
     }
     
     class NumberRange extends Exception {
         NumberRange() {
-            super("plese enter number between 1000 and 2000");
+            super("please enter number between 1000 and 2000");
         }
     }
     
     class GraterNum extends Exception {
         GraterNum() {
-            super("plese enter number less then 7000");
+            super("please enter number less then 7000");
         }
     }
     

@@ -11,7 +11,7 @@ public class Cal {
         char da = dt.next().charAt(0);
         switch (da) {
             case '+':System.out.println("a+b="+(a+b));
-                break;
+            break;
             case '-':System.out.println("a-b="+(a-b));
             break;
             case '*':System.out.println("a*b="+(a*b));

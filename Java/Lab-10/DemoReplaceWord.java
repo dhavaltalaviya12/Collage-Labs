@@ -11,7 +11,7 @@ public class DemoReplaceWord {
             int count = 0;
 
             while ((line = br.readLine()) != null) {
-                String[] word = line.split("//s+");
+                String[] word = line.split("\\s+");
                 for (int i = 0; i <= word.length; i++) {
                     System.out.println(word[i].indexOf("word"));
                 }

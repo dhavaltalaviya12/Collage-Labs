@@ -9,6 +9,10 @@ public class User {
         System.out.println("Enter Branch : ");
         String c = DT.next();
         System.out.println("Enter Sem : ");
-        String d = DT.next();  
+        String d = DT.next();
+        System.out.println("Name = "+a);
+        System.out.println("Roll No. = "+b);
+        System.out.println("Branch = "+c);
+        System.out.println("Sem = "+d);  
     }
 }

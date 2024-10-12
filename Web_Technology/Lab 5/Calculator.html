@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #display {
+            padding: 12px 10px;
+            margin: 7px 0;
+            font-size: 25px;
+            width: 300px;
+            border: none;
+            color: white;
+            text-align: right;
+        }
+
+        .button {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 8px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 30px;
+            background-color: #212121;
+            border-radius: 30px;
+            border: 1px solid #212121;
+            width: 60px;
+            height: 60px;
+        }
+
+        input:active {
+            background-color: #3b3a3a;
+            animation: button 0.4s;
+        }
+
+        #g {
+            color: #00ff00;
+        }
+
+        #C {
+            color: #ff6666;
+        }
+
+        #equ {
+            background-color: #22cc22;
+        }
+
+        #equ:active {
+            animation: button 0.4s;
+            background-color: #0fe60f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td colspan="4" id="display"> </td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="7" onclick="addNo('7')" id="n"></td>
+                <td><input type="button" value="8" onclick="addNo('8')" id="n"></td>
+                <td><input type="button" value="9" onclick="addNo('9')" id="n"></td>
+                <td><input type="button" value="+" onclick="addNo('+')" id="g"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="4" onclick="addNo('4')" id="n"></td>
+                <td><input type="button" value="5" onclick="addNo('5')" id="n"></td>
+                <td><input type="button" value="6" onclick="addNo('6')" id="n"></td>
+                <td><input type="button" value="-" onclick="addNo('-')" id="g"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="1" onclick="addNo('1')" id="n"></td>
+                <td><input type="button" value="2" onclick="addNo('2')" id="n"></td>
+                <td><input type="button" value="3" onclick="addNo('3')" id="n"></td>
+                <td><input type="button" value="*" onclick="addNo('*')" id="g"></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="c" onclick="Myclear('c')" id="C"></td>
+                <td><input type="button" value="0" onclick="addNo('0')" id="n"></td>
+                <td><input type="button" value="=" onclick="finalAns('=')" id="equ"></td>
+                <td><input type="button" value="/" onclick="addNo('/')" id="g"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        function addNo(value) {
+            ans = document.getElementById("display")
+            ans.innerHTML += value
+        }
+        function Myclear() {
+            ans = document.getElementById("display")
+            ans.innerHTML = " "
+        }
+        function finalAns() {
+            ans = document.getElementById("display")
+            finalAnser = eval(ans.innerHTML)
+            ans.innerHTML = finalAnser
+        }
+    </script>
+</body>
+
+</html>

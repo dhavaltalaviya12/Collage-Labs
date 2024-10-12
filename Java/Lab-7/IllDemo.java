@@ -23,31 +23,34 @@ interface A extends A1, A2 {
     }
 }
 
-    interface P1 {
-        int d=10;
-        void methodA1();
-    }
+interface P1 {
+    int d = 10;
 
-    interface P2 {
-        int e=20;
-        void methodA2();
-    }
+    void methodA1();
+}
 
-    interface A12 extends P1, P2 {
-        int f=40;
-        void methodA12();
-    }
+interface P2 {
+    int e = 20;
+
+    void methodA2();
+}
+
+interface A12 extends P1, P2 {
+    int f = 40;
+
+    void methodA12();
+}
 
 class B implements A12 {
     public void methodA1() {
-        System.out.println("Method A1 implementation in class B:"+d);
+        System.out.println("Method A1 implementation in class B:" + d);
     }
 
     public void methodA2() {
-        System.out.println("Method A2 implementation in class B:"+e);
+        System.out.println("Method A2 implementation in class B:" + e);
     }
 
     public void methodA12() {
-        System.out.println("Method A12 implementation in class B:"+f);
+        System.out.println("Method A12 implementation in class B:" + f);
     }
-}   
+}

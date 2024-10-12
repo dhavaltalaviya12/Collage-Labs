@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #div1{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        color: white;
+        float: left;
+        margin-left: 20px;
+    }
+</style>
+<body onkeydown="abc(event)">
+    <script>
+        function abc(e){
+            if(e.key == "ArrowDown"){
+                document.body.bgColor = "red"
+            }
+            else if(e.key == "ArrowUp"){
+                document.body.bgColor = "blue"
+            }
+            else if(e.key == "ArrowRight"){
+                document.body.bgColor = "yellow"
+            }
+            else if(e.key == "ArrowLeft"){
+                document.body.bgColor = "green"
+            }
+        }
+    </script>
+</body>
+</html>
