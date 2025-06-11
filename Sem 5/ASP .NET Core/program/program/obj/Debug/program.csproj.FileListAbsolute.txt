@@ -1,6 +1,0 @@
-C:\Users\student\Desktop\Dhaval\program\program\bin\Debug\program.exe.config
-C:\Users\student\Desktop\Dhaval\program\program\obj\Debug\program.csprojResolveAssemblyReference.cache
-C:\Users\student\Desktop\Dhaval\program\program\bin\Debug\program.exe
-C:\Users\student\Desktop\Dhaval\program\program\bin\Debug\program.pdb
-C:\Users\student\Desktop\Dhaval\program\program\obj\Debug\program.exe
-C:\Users\student\Desktop\Dhaval\program\program\obj\Debug\program.pdb
