@@ -114,7 +114,7 @@ SELECT
     [dbo].[Department].[UserID],
     [dbo].[User].[UserName]
 FROM [dbo].[Department]
-LEFT JOIN [dbo].[User]
+INNER JOIN [dbo].[User]
     ON [dbo].[User].[UserID] = [dbo].[Department].[UserID]
 WHERE [dbo].[Department].[IsActive] = 1
 ORDER BY [dbo].[Department].[DepartmentName]
@@ -136,7 +136,7 @@ SELECT
     [dbo].[Department].[UserID],
     [dbo].[User].[UserName]
 FROM [dbo].[Department]
-LEFT JOIN [dbo].[User]
+INNER JOIN [dbo].[User]
     ON [dbo].[User].[UserID] = [dbo].[Department].[UserID]
 WHERE [dbo].[Department].[DepartmentID] = @DepartmentID
 END
@@ -217,7 +217,7 @@ SELECT
     [dbo].[Doctor].[UserID],
     [dbo].[User].[UserName] AS CreatedByUserName
 FROM [dbo].[Doctor]
-LEFT JOIN [dbo].[User]
+INNER JOIN [dbo].[User]
     ON [dbo].[User].[UserID] = [dbo].[Doctor].[UserID]
 WHERE [dbo].[Doctor].[IsActive] = 1
 END
@@ -241,7 +241,7 @@ SELECT
     [dbo].[Doctor].[UserID],
     [dbo].[User].[UserName] AS CreatedByUserName
 FROM [dbo].[Doctor]
-LEFT JOIN [dbo].[User]
+INNER JOIN [dbo].[User]
     ON [dbo].[User].[UserID] = [dbo].[Doctor].[UserID]
 WHERE [dbo].[Doctor].[DoctorID] = @DoctorID
 END
@@ -335,11 +335,11 @@ SELECT
     [dbo].[DoctorDepartment].[UserID],
     [dbo].[User].[UserName] AS CreatedByUserName
 FROM [dbo].[DoctorDepartment]
-LEFT JOIN [dbo].[Doctor]
+INNER JOIN [dbo].[Doctor]
     ON [dbo].[Doctor].[DoctorID] = [dbo].[DoctorDepartment].[DoctorID]
-LEFT JOIN [dbo].[Department]
+INNER JOIN [dbo].[Department]
     ON [dbo].[Department].[DepartmentID] = [dbo].[DoctorDepartment].[DepartmentID]
-LEFT JOIN [dbo].[User]
+INNER JOIN [dbo].[User]
     ON [dbo].[User].[UserID] = [dbo].[DoctorDepartment].[UserID]
 ORDER BY 
     [dbo].[Doctor].[Name],
@@ -363,11 +363,11 @@ SELECT
     [dbo].[DoctorDepartment].[UserID],
     [dbo].[User].[UserName] AS CreatedByUserName
 FROM [dbo].[DoctorDepartment]
-LEFT JOIN [dbo].[Doctor]
+INNER JOIN [dbo].[Doctor]
     ON [dbo].[Doctor].[DoctorID] = [dbo].[DoctorDepartment].[DoctorID]
-LEFT JOIN [dbo].[Department]
+INNER JOIN [dbo].[Department]
     ON [dbo].[Department].[DepartmentID] = [dbo].[DoctorDepartment].[DepartmentID]
-LEFT JOIN [dbo].[User]
+INNER JOIN [dbo].[User]
     ON [dbo].[User].[UserID] = [dbo].[DoctorDepartment].[UserID]
 WHERE [dbo].[DoctorDepartment].[DoctorDepartmentID] = @DoctorDepartmentID
 END
@@ -445,7 +445,7 @@ SELECT
     [dbo].[Patient].[UserID],
     [dbo].[User].[UserName] AS CreatedByUserName
 FROM [dbo].[Patient]
-LEFT JOIN [dbo].[User]
+INNER JOIN [dbo].[User]
     ON [dbo].[User].[UserID] = [dbo].[Patient].[UserID]
 WHERE [dbo].[Patient].[IsActive] = 1
 ORDER BY [dbo].[Patient].[Name]
@@ -473,7 +473,7 @@ SELECT
     [dbo].[Patient].[UserID],
     [dbo].[User].[UserName] AS CreatedByUserName
 FROM [dbo].[Patient]
-LEFT JOIN [dbo].[User]
+INNER JOIN [dbo].[User]
     ON [dbo].[User].[UserID] = [dbo].[Patient].[UserID]
 WHERE [dbo].[Patient].[PatientID] = @PatientID
 END
@@ -586,11 +586,11 @@ SELECT
     [dbo].[User].[UserName] AS CreatedByUserName,
     [dbo].[Appointment].[TotalConsultedAmount]
 FROM [dbo].[Appointment]
-LEFT JOIN [dbo].[Doctor]
+INNER JOIN [dbo].[Doctor]
     ON [dbo].[Doctor].[DoctorID] = [dbo].[Appointment].[DoctorID]
-LEFT JOIN [dbo].[Patient]
+INNER JOIN [dbo].[Patient]
     ON [dbo].[Patient].[PatientID] = [dbo].[Appointment].[PatientID]
-LEFT JOIN [dbo].[User]
+INNER JOIN [dbo].[User]
     ON [dbo].[User].[UserID] = [dbo].[Appointment].[UserID]
 ORDER BY 
     [dbo].[Appointment].[AppointmentDate] DESC
@@ -618,11 +618,11 @@ SELECT
     [dbo].[User].[UserName] AS CreatedByUserName,
     [dbo].[Appointment].[TotalConsultedAmount]
 FROM [dbo].[Appointment]
-LEFT JOIN [dbo].[Doctor]
+INNER JOIN [dbo].[Doctor]
     ON [dbo].[Doctor].[DoctorID] = [dbo].[Appointment].[DoctorID]
-LEFT JOIN [dbo].[Patient]
+INNER JOIN [dbo].[Patient]
     ON [dbo].[Patient].[PatientID] = [dbo].[Appointment].[PatientID]
-LEFT JOIN [dbo].[User]
+INNER JOIN [dbo].[User]
     ON [dbo].[User].[UserID] = [dbo].[Appointment].[UserID]
 WHERE [dbo].[Appointment].[AppointmentID] = @AppointmentID
 END
