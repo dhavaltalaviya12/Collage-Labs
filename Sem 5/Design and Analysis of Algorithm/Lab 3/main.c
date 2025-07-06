@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "sorting_algo.h"
+#include "sorting_algo.c"
 
 const int sizes[] = {100, 1000, 10000, 100000};
 const char *cases[] = {"best", "average", "worst"};
@@ -24,14 +24,10 @@ void read_input_file(int *array, const char *filename, int count)
 
 double measure_time(void (*sort_fun)(int *, int), int *data, int n)
 {
-    int *temp = malloc(sizeof(int) * n);
-    memcpy(temp, data, sizeof(int) * n);
-
     clock_t start = clock();
-    sort_fun(temp, n);
+    sort_fun(data, n);
     clock_t end = clock();
 
-    free(temp);
     return (double)(end - start) / CLOCKS_PER_SEC;
 }
 
@@ -49,7 +45,7 @@ void display_table(const char *algo_name, void (*sort_fun)(int *, int))
 
         for (int j = 0; j < 3; j++)
         {
-            sprintf(filename, "./arrays/%s_%d.txt", cases[j], sizes[j]);
+            sprintf(filename, "./arrays/%s_%d.txt", cases[j], sizes[i]);
             arrays[j] = malloc(count * sizeof(int));
             read_input_file(arrays[j], filename, count);
         }
@@ -62,9 +58,9 @@ void display_table(const char *algo_name, void (*sort_fun)(int *, int))
 
         printf("%-20d %-9.6lfs | %-9.6lfs | %-9.6lfs\n", count, times[0], times[1], times[2]);
 
-        for (int j = 0; j < 3; j++)
+        for (int i = 0; i < 3; i++)
         {
-            free(arrays[j]);
+            free(arrays[i]);
         }
     }
 }
@@ -75,9 +71,11 @@ int main()
     {
         int choice;
         printf("\nChoose a sorting algorithm:\n");
-        printf("0. Exit\n");
-        printf("1. Bubble Sort\n");
-        printf("2. Insertion Sort\n");
+        printf("0) Exit\n");
+        printf("1) Bubble Sort\n");
+        printf("2) Insertion Sort\n");
+        printf("3) Selection Sort\n");
+        printf("4) Heap Sort\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -93,6 +91,14 @@ int main()
 
         case 2:
             display_table("Insertion sort", insertion_sort);
+            break;
+
+        case 3:
+            display_table("Selection sort", selection_sort);
+            break;
+
+        case 4:
+            display_table("Heap sort", heap_sort);
             break;
 
         default:
