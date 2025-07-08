@@ -37,7 +37,7 @@ WHERE [dbo].[User].[UserID] = @UserID
 END
 
 
--- EXEC PR_User_Insert @UserName = 'Jevin Morad', @Password = 'P@ssword123', @Email = 'jevin@example.com', @MobileNo = '9876543210', @IsActive = 1
+-- EXEC PR_User_Insert @UserName = 'Dhaval Talaviya', @Password = 'P@ssword456', @Email = 'dhaval@example.com', @MobileNo = '9876543287', @IsActive = 1
 CREATE OR ALTER PROCEDURE [dbo].[PR_User_Insert]
     @UserName NVARCHAR(100),
     @Password NVARCHAR(100),

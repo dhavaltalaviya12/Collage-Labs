@@ -28,3 +28,11 @@ C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\obj\De
 C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\obj\Debug\net8.0\HMS.pdb
 C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\obj\Debug\net8.0\HMS.genruntimeconfig.cache
 C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\obj\Debug\net8.0\ref\HMS.dll
+C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\bin\Debug\net8.0\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\obj\Debug\net8.0\HMS.csproj.AssemblyReference.cache
+C:\Collage-Labs\Sem 5\ASP .NET Core\Project\Hospital Managment System\HMS\obj\Debug\net8.0\HMS.csproj.Up2Date
