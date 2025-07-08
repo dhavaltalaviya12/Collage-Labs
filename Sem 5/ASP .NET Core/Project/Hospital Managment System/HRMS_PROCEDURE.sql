@@ -247,7 +247,7 @@ WHERE [dbo].[Doctor].[DoctorID] = @DoctorID
 END
 
 
--- EXEC PR_Doctor_Insert @Name = 'Dr. Jevin', @Phone = '9998887777', @Email = 'drjevin@example.com', @Qualification = 'MBBS', @Specialization = 'Neurology', @IsActive = 1, @UserID = 1
+-- EXEC PR_Doctor_Insert @Name = 'Dr. Dhaval', @Phone = '9824239884', @Email = 'dhaval@example.com', @Qualification = 'MBBS', @Specialization = 'Psychiatry', @IsActive = 1, @UserID = 2
 CREATE OR ALTER PROCEDURE [dbo].[PR_Doctor_Insert]
     @Name NVARCHAR(100),
     @Phone NVARCHAR(20),
@@ -307,7 +307,7 @@ WHERE [dbo].[Doctor].[DoctorID] = @DoctorID
 END
 
 
--- EXEC PR_Doctor_DeleteByPK @DoctorID = 1
+-- EXEC PR_Doctor_DeleteByPK @DoctorID = 2
 CREATE OR ALTER PROCEDURE [dbo].[PR_Doctor_DeleteByPK]
     @DoctorID INT
 AS

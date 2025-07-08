@@ -8,9 +8,11 @@
 <body>
     <h1>Users List</h1>
     <div class="card">
-        <h5 class="card-header">Users List</h5>
-        <div class="table-responsive text-nowrap">
-            <table class="table">
+        <div class="card-body">
+            <h5 class="card-title">User List</h5>
+
+            <!-- Table with hoverable rows -->
+            <table class="table table-hover">
                 <thead>
                     <tr>
                         <th>UserID</th>
@@ -20,14 +22,14 @@
                         <th>Actions</th>
                     </tr>
                 </thead>
-                <tbody class="table-border-bottom-0">
+                <tbody>
                     @foreach (DataRow row in Model.Rows)
                     {
                         <tr>
                             <td>@row["UserID"]</td>
                             <td><i class="fab fa-angular fa-lg text-danger me-3"></i> <strong>@row["UserName"]</strong></td>
-                            <td><span class="badge bg-label-primary me-1">@row["Email"]</span></td>
-                            <td><span class="badge bg-label-primary me-1">@row["MobileNo"]</span></td>
+                            <td><span class=" me-1">@row["Email"]</span></td>
+                            <td><span class=" me-1">@row["MobileNo"]</span></td>
 
                             <td>
                                 <div class="dropdown">
@@ -42,11 +44,13 @@
                             </td>
                         </tr>
                     }
-                    
                 </tbody>
             </table>
+            <!-- End Table with hoverable rows -->
+
         </div>
     </div>
+
 
 </body>
 </html>
