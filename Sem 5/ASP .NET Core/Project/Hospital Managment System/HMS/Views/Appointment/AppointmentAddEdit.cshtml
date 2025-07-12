@@ -1,9 +1,81 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Appointment Add/Edit Form</title>
+    <title>Add/Edit Appointment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Appointment Add/Edit Form</h1>
+    <div class="card shadow-sm rounded-3 m-4">
+        <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Add/Edit Appointment</h5>
+            <a href="/Appointment/AppointmentList" class="btn btn-light btn-sm">
+                <i class="bx bx-arrow-back"></i> Back to List
+            </a>
+        </div>
+
+        <div class="card-body">
+            <form method="post" action="/Appointment/Save">
+                <input type="hidden" name="AppointmentID" value="0" />
+                <input type="hidden" name="UserID" value="1" />
+
+                <div class="mb-3">
+                    <label class="form-label">Doctor</label>
+                    <select name="DoctorID" class="form-select" required>
+                        <option value="">-- Select Doctor --</option>
+                        <option value="1">Dr. A. Patel</option>
+                        <option value="2">Dr. R. Sharma</option>
+                        <option value="3">Dr. K. Mehta</option>
+                        <!-- Populate dynamically in backend -->
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Patient</label>
+                    <select name="PatientID" class="form-select" required>
+                        <option value="">-- Select Patient --</option>
+                        <option value="1">Rahul Shah</option>
+                        <option value="2">Sneha Joshi</option>
+                        <option value="3">Ankit Mehta</option>
+                        <!-- Populate dynamically in backend -->
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Appointment Date</label>
+                    <input type="datetime-local" class="form-control" name="AppointmentDate" required />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Appointment Status</label>
+                    <select name="AppointmentStatus" class="form-select" required>
+                        <option value="">-- Select Status --</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Confirmed">Confirmed</option>
+                        <option value="Completed">Completed</option>
+                        <option value="Cancelled">Cancelled</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Description</label>
+                    <textarea class="form-control" name="Description" placeholder="Describe symptoms or reason..." rows="3"></textarea>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Special Remarks</label>
+                    <input type="text" class="form-control" name="SpecialRemarks" placeholder="Any special instructions" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Total Consulted Amount</label>
+                    <input type="number" step="0.01" class="form-control" name="TotalConsultedAmount" placeholder="Enter amount" />
+                </div>
+
+                <button type="submit" class="btn btn-success">
+                    <i class="bx bx-save"></i> Save Appointment
+                </button>
+            </form>
+        </div>
+    </div>
 </body>
 </html>

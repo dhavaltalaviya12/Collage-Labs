@@ -1,9 +1,66 @@
-﻿<!DOCTYPE html>
+﻿@model DataTable;
+@using System.Data;
+<!DOCTYPE html>
 <html>
 <head>
     <title>Department List</title>
 </head>
 <body>
     <h1>Department List</h1>
+    <div class="card shadow-sm rounded-3">
+        <div class="card-header bg-info text-white d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">Department List</h5>
+            <a href="/Department/DepartmentAddEdit" class="btn btn-light btn-sm">
+                <i class="bx bx-plus"></i> Add Department
+            </a>
+        </div>
+
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle text-center">
+                    <thead class="table-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (DataRow row in Model.Rows)
+                        {
+                            bool isActive = Convert.ToBoolean(row["IsActive"]);
+                            string statusClass = isActive ? "bg-success" : "bg-danger";
+                            string statusText = isActive ? "Active" : "Inactive";
+
+                            <tr>
+                                <td>@row["DepartmentID"]</td>
+                                <td><strong>@row["DepartmentName"]</strong></td>
+                                <td>@row["Description"]</td>
+                                <td>
+                                    <span class="badge @statusClass">@statusText</span>
+                                </td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a class="btn btn-sm btn-outline-primary" href="/Department/Edit/@row["DepartmentID"]" title="Edit">
+                                            <i class="bx bx-edit-alt"></i>
+                                        </a>
+                                        <a class="btn btn-sm btn-outline-danger" asp-controller="Department" asp-action="DepartmentDelete" asp-route-DepartmentID="@row["DepartmentID"]" title="Delete"
+                                           onclick="return confirm('Are you sure you want to delete this department?');">
+                                            <i class="bx bx-trash"></i>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 </html>

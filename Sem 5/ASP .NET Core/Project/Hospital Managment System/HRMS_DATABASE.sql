@@ -76,8 +76,10 @@ CREATE TABLE Appointment (
     Created DATETIME NOT NULL DEFAULT GETDATE(),
     Modified DATETIME NOT NULL,
     UserID INT NOT NULL,
-    TotalConsultedAmount DECIMAL(5,2) NULL,
+    TotalConsultedAmount DECIMAL(8,2) NULL,
     CONSTRAINT FK_Appointment_Doctor FOREIGN KEY (DoctorID) REFERENCES Doctor(DoctorID),
     CONSTRAINT FK_Appointment_Patient FOREIGN KEY (PatientID) REFERENCES Patient(PatientID),
     CONSTRAINT FK_Appointment_User FOREIGN KEY (UserID) REFERENCES [User](UserID)
 );
+
+

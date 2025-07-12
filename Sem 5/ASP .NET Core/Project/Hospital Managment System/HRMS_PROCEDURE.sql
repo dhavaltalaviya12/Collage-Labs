@@ -142,7 +142,7 @@ WHERE [dbo].[Department].[DepartmentID] = @DepartmentID
 END
 
 
--- EXEC PR_Department_Insert @DepartmentName = 'Cardiology', @Description = 'Heart care unit', @IsActive = 1, @Modified = GETDATE(), @UserID = 1
+-- EXEC PR_Department_Insert @DepartmentName = 'Physiotherapy', @Description = 'improve physical function', @IsActive = 1, @UserID = 2
 CREATE OR ALTER PROCEDURE [dbo].[PR_Department_Insert]
     @DepartmentName NVARCHAR(100),
     @Description NVARCHAR(250),
@@ -373,7 +373,7 @@ WHERE [dbo].[DoctorDepartment].[DoctorDepartmentID] = @DoctorDepartmentID
 END
 
 
--- EXEC PR_DoctorDepartment_Insert @DoctorID = 1, @DepartmentID = 2, @UserID = 1
+-- EXEC PR_DoctorDepartment_Insert @DoctorID = 4, @DepartmentID = 2, @UserID = 2
 CREATE OR ALTER PROCEDURE [dbo].[PR_DoctorDepartment_Insert]
     @DoctorID INT,
     @DepartmentID INT,
@@ -628,7 +628,7 @@ WHERE [dbo].[Appointment].[AppointmentID] = @AppointmentID
 END
 
 
--- EXEC PR_Appointment_Insert @DoctorID = 1, @PatientID = 2, @AppointmentDate = '2025-06-30 14:00', @AppointmentStatus = 'Scheduled', @Description = 'Routine Checkup', @SpecialRemarks = 'None', @UserID = 1, @TotalConsultedAmount = 150.00
+-- EXEC PR_Appointment_Insert @DoctorID = 4, @PatientID = 1, @AppointmentDate = '2025-07-09 14:00', @AppointmentStatus = 'Scheduled', @Description = 'Operation', @SpecialRemarks = 'None', @UserID = 2, @TotalConsultedAmount = 500.00
 CREATE OR ALTER PROCEDURE [dbo].[PR_Appointment_Insert]
     @DoctorID INT,
     @PatientID INT,
@@ -637,7 +637,7 @@ CREATE OR ALTER PROCEDURE [dbo].[PR_Appointment_Insert]
     @Description NVARCHAR(250),
     @SpecialRemarks NVARCHAR(100),
     @UserID INT,
-    @TotalConsultedAmount DECIMAL(5, 2) = NULL
+    @TotalConsultedAmount DECIMAL(8, 2) = NULL
 AS
 BEGIN
 INSERT INTO [dbo].[Appointment] (
@@ -675,7 +675,7 @@ CREATE OR ALTER PROCEDURE [dbo].[PR_Appointment_UpdateByPK]
     @Description NVARCHAR(250),
     @SpecialRemarks NVARCHAR(100),
     @UserID INT,
-    @TotalConsultedAmount DECIMAL(5, 2)
+    @TotalConsultedAmount DECIMAL(8, 2)
 AS
 BEGIN
 UPDATE [dbo].[Appointment]
