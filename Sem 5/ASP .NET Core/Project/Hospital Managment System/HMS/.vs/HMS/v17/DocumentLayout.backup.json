@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\views\\doctor\\doctoraddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:views\\doctor\\doctoraddedit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\views\\doctordepartment\\doctordepartmentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:views\\doctordepartment\\doctordepartmentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\views\\user\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:views\\user\\userlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\views\\patient\\patientlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:views\\patient\\patientlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\views\\doctor\\doctorlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:views\\doctor\\doctorlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\views\\department\\departmentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:views\\department\\departmentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\views\\appointment\\appointmentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:views\\appointment\\appointmentlist.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|c:\\collage-labs\\sem 5\\asp .net core\\project\\hospital managment system\\hms\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F04CB6E9-6F9B-42E5-A9C8-B4B45A23D627}|HMS.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,63 +42,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DoctorAddEdit.cshtml",
-              "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Doctor\\DoctorAddEdit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Doctor\\DoctorAddEdit.cshtml",
-              "ToolTip": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Doctor\\DoctorAddEdit.cshtml*",
-              "RelativeToolTip": "Views\\Doctor\\DoctorAddEdit.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-12T07:30:16.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DoctorList.cshtml",
-              "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Doctor\\DoctorList.cshtml",
-              "RelativeDocumentMoniker": "Views\\Doctor\\DoctorList.cshtml",
-              "ToolTip": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Doctor\\DoctorList.cshtml",
-              "RelativeToolTip": "Views\\Doctor\\DoctorList.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UserList.cshtml",
+              "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\User\\UserList.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\UserList.cshtml",
+              "ToolTip": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\User\\UserList.cshtml",
+              "RelativeToolTip": "Views\\User\\UserList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-12T06:24:51.693Z",
+              "WhenOpened": "2025-07-12T07:54:14.101Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "Controllers\\DoctorController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAADwvxsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-12T06:17:37.573Z",
+              "Title": "PatientList.cshtml",
+              "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Patient\\PatientList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\PatientList.cshtml",
+              "ToolTip": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Patient\\PatientList.cshtml",
+              "RelativeToolTip": "Views\\Patient\\PatientList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T07:53:53.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoctorDepartmentList.cshtml",
+              "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\DoctorDepartment\\DoctorDepartmentList.cshtml",
+              "RelativeDocumentMoniker": "Views\\DoctorDepartment\\DoctorDepartmentList.cshtml",
+              "ToolTip": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\DoctorDepartment\\DoctorDepartmentList.cshtml",
+              "RelativeToolTip": "Views\\DoctorDepartment\\DoctorDepartmentList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T07:53:37.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DoctorList.cshtml",
+              "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Doctor\\DoctorList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Doctor\\DoctorList.cshtml",
+              "ToolTip": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Doctor\\DoctorList.cshtml",
+              "RelativeToolTip": "Views\\Doctor\\DoctorList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T07:53:22.332Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "DepartmentList.cshtml",
+              "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Department\\DepartmentList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Department\\DepartmentList.cshtml",
+              "ToolTip": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Department\\DepartmentList.cshtml",
+              "RelativeToolTip": "Views\\Department\\DepartmentList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T07:53:05.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AppointmentList.cshtml",
+              "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Appointment\\AppointmentList.cshtml",
+              "RelativeDocumentMoniker": "Views\\Appointment\\AppointmentList.cshtml",
+              "ToolTip": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Appointment\\AppointmentList.cshtml",
+              "RelativeToolTip": "Views\\Appointment\\AppointmentList.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-12T07:52:45.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAgwAMAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAgwAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-08T02:57:08.126Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Collage-Labs\\Sem 5\\ASP .NET Core\\Project\\Hospital Managment System\\HMS\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
