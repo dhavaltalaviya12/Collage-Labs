@@ -50,7 +50,7 @@
                                 <td>@row["State"]</td>
                                 <td>
                                     <div class="btn-group" role="group">
-                                        <a class="btn btn-sm btn-outline-primary" href="/Patient/Edit/@row["PatientID"]" title="Edit">
+                                        <a class="btn btn-sm btn-outline-primary" asp-controller="Patient" asp-action="PatientAddEdit" asp-route-PatientID="@row["PatientID"]" title="Edit">
                                             <i class="bx bx-edit-alt"></i>
                                         </a>
                                         <a class="btn btn-sm btn-outline-danger" asp-controller="Patient" asp-action="PatientDelete" asp-route-PatientID="@row["PatientID"]" title="Delete"

@@ -14,9 +14,15 @@
         </div>
 
         <div class="card-body">
-            <form method="post" action="/Doctor/Save">
-                <input type="hidden" name="DoctorID" value="0" />
-                <input type="hidden" name="UserID" value="1" />
+            <form method="post" asp-controller="Doctor" asp-action="DoctorAddEdit">
+                @* <input type="hidden" name="DoctorID" value="0" /> *@
+
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label class="form-label">User ID</label>
+                        <input type="number" class="form-control" name="UserID" placeholder="Enter User ID" value="1" required />
+                    </div>
+                </div>
 
                 <div class="row mb-3">
                     <div class="col-md-6">
